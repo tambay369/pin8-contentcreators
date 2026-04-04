@@ -69,3 +69,10 @@ document.querySelectorAll('.feature, .card, .price-card').forEach(el => {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+// FAQ Toggle
+function toggleFaq(el) {
+    el.classList.toggle('active');
+    const answer = el.nextElementSibling;
+    answer.classList.toggle('show');
+}

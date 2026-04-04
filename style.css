@@ -765,6 +765,53 @@ body {
     margin-top: 25px;
 }
 
+/* THANK YOU MESSAGE */
+.thank-you {
+    text-align: center;
+    padding: 80px 40px;
+    background: rgba(10,10,10,0.95);
+    border: 2px solid #D4AF37;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    font-size: 3rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.thank-you h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 20px;
+    letter-spacing: 0.2rem;
+}
+
+.thank-you p {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.thank-you-note {
+    color: #D4AF37;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
 /* FOOTER */
 footer {
     text-align: center;

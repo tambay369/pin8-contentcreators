@@ -1,6 +1,7 @@
 // PIN8 CONTENT CREATORS SYSTEM
+// Clean. Simple. Premium.
 
-// Smooth scroll
+// Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
         e.preventDefault();
@@ -15,11 +16,31 @@ function toggleFaq(el) {
     el.nextElementSibling.classList.toggle('show');
 }
 
-// Show thank you message if redirected from form
+// Form Submission Handler
+const form = document.getElementById('contactForm');
+const thankYou = document.getElementById('thankYou');
+
+if (form) {
+    form.addEventListener('submit', function(e) {
+        // Let FormSubmit.co handle the submission
+        // After submission, show thank you message
+        setTimeout(() => {
+            form.style.display = 'none';
+            thankYou.style.display = 'block';
+            window.scrollTo({
+                top: form.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }, 1000);
+    });
+}
+
+// Check if redirected from form submission
 if (window.location.hash === '#thankyou') {
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('thankYou').style.display = 'block';
+    if (form) form.style.display = 'none';
+    if (thankYou) thankYou.style.display = 'block';
     window.location.hash = '';
 }
 
 console.log('PIN8 Creator System Loaded');
+console.log('Form submissions → inquiry.pin8@gmail.com');

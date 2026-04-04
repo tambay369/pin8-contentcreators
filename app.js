@@ -1,5 +1,25 @@
 // PIN8 CONTENT CREATORS SYSTEM
 
+// Toggle FAQ
+function toggleFaq(element) {
+    const answer = element.nextElementSibling;
+    const isHidden = answer.classList.contains('hidden');
+    
+    // Close all FAQs
+    document.querySelectorAll('.faq-answer').forEach(faq => {
+        faq.classList.add('hidden');
+    });
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.classList.remove('active');
+    });
+    
+    // Open clicked if was closed
+    if (isHidden) {
+        answer.classList.remove('hidden');
+        element.classList.add('active');
+    }
+}
+
 // Submit Lead
 function submitLead() {
     const name = document.getElementById('leadName').value.trim();

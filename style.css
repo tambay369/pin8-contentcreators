@@ -768,48 +768,54 @@ body {
 /* THANK YOU MESSAGE */
 .thank-you {
     text-align: center;
-    padding: 80px 40px;
+    padding: 100px 50px;
     background: rgba(10,10,10,0.95);
     border: 2px solid #D4AF37;
     border-radius: 15px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    display: none;
 }
 
 .thank-you-icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 30px auto;
-    font-size: 3rem;
+    margin: 0 auto 35px auto;
+    font-size: 3.5rem;
     color: #000;
     font-weight: bold;
+    box-shadow: 0 0 40px rgba(212,175,55,0.4);
 }
 
 .thank-you h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #D4AF37;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     letter-spacing: 0.2rem;
+    font-weight: 700;
 }
 
 .thank-you p {
     color: #aaa;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin: 15px 0;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin: 20px 0;
 }
 
 .thank-you-note {
     color: #D4AF37;
     font-style: italic;
-    margin-top: 30px;
-    font-size: 1rem;
+    margin-top: 35px;
+    font-size: 1.05rem;
+    padding-top: 25px;
+    border-top: 1px solid #333;
+}
 }
 
 /* FOOTER */

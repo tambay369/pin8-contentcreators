@@ -795,7 +795,23 @@ footer p {
     border-top: 1px solid #333;
     font-weight: 500;
 }
+.contact-info {
+    color: #D4AF37;
+    font-size: 1rem;
+    margin: 15px 0;
+    font-weight: 500;
+}
 
+.contact-info a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact-info a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .features, .grid-4, .grid-3, .comparison { grid-template-columns: repeat(2, 1fr); }

@@ -113,8 +113,98 @@ body {
     box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
 }
 
+/* CONTENT BOXES */
+.content-box {
+    background: rgba(10, 10, 10, 0.8);
+    border: 2px solid #D4AF37;
+    padding: 45px;
+    border-radius: 12px;
+    margin: 25px 0;
+    line-height: 1.9;
+    color: #aaa;
+}
+
+.content-box.highlight {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    border-color: #FFD700;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: #D4AF37;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* FEATURE MINI */
+.feature-mini {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-mini h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.feature-mini p {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* VALUE GRID */
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 35px 0;
+}
+
+.value-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.value-card h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 /* SECTIONS */
-.problem-section, .solution-section, .how-it-works-section, .pricing-section, .proof-section, .lead-section {
+.what-is-pin8, .creators-value, .faq-section, .pricing-section, .lead-section {
     margin: 80px 0;
 }
 
@@ -133,111 +223,60 @@ body {
     margin-bottom: 40px;
 }
 
-/* PROBLEM & SOLUTION BOXES */
-.problem-box, .solution-box {
+/* FAQ SECTION */
+.faq-item {
     background: rgba(10, 10, 10, 0.8);
-    border: 2px solid #D4AF37;
-    padding: 45px;
-    border-radius: 12px;
-}
-
-.problem-lead, .solution-lead {
-    font-size: 1.2rem;
-    color: #aaa;
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 1.8;
-}
-
-.problem-grid, .solution-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.problem-card, .solution-card {
-    background: rgba(0, 0, 0, 0.6);
     border: 1.5px solid #333;
-    padding: 30px 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
-.solution-card:hover {
+.faq-item:hover {
     border-color: #D4AF37;
-    transform: translateY(-5px);
 }
 
-.problem-icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.solution-icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.problem-card h4, .solution-card h4 {
-    color: #D4AF37;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.problem-card p, .solution-card p {
-    color: #999;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-/* HOW IT WORKS */
-.steps-container {
+.faq-question {
+    padding: 25px 30px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0;
-}
-
-.step-card {
-    flex: 1;
-    background: rgba(0, 0, 0, 0.6);
-    border: 1.5px solid #333;
-    padding: 35px 25px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.step-number {
-    color: #D4AF37;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    opacity: 0.5;
-}
-
-.step-card h4 {
-    color: #D4AF37;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
     font-weight: 600;
+    font-size: 1.05rem;
+    color: #FFFFFF;
+    transition: all 0.3s;
 }
 
-.step-card p {
-    color: #999;
-    font-size: 0.9rem;
-    line-height: 1.6;
+.faq-question:hover {
+    background: rgba(212, 175, 55, 0.05);
 }
 
-.step-arrow {
+.toggle-icon {
     color: #D4AF37;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-question.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 30px 25px 30px;
+    color: #aaa;
+    line-height: 1.8;
+    border-top: 1px solid #222;
+}
+
+.faq-answer ul, .faq-answer ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.faq-answer li {
+    margin: 12px 0;
 }
 
 /* PRICING */
@@ -365,34 +404,6 @@ body {
     line-height: 1.7;
 }
 
-/* PROOF SECTION */
-.proof-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.proof-item {
-    text-align: center;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
-    border: 1.5px solid #333;
-    border-radius: 10px;
-}
-
-.proof-stat {
-    color: #D4AF37;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.proof-label {
-    color: #888;
-    font-size: 0.9rem;
-}
-
 /* LEAD SECTION */
 .lead-section {
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
@@ -492,17 +503,15 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    .problem-grid, .solution-grid, .pricing-grid, .proof-grid { grid-template-columns: repeat(2, 1fr); }
-    .steps-container { flex-direction: column; gap: 20px; }
-    .step-arrow { transform: rotate(90deg); }
+    .value-grid, .pricing-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
     #logo-watermark { font-size: 15rem; }
     .hero-section h1 { font-size: 2.2rem; }
     .section-heading { font-size: 1.8rem; }
-    .problem-grid, .solution-grid, .pricing-grid, .proof-grid { grid-template-columns: 1fr; }
-    .problem-box, .solution-box, .lead-section { padding: 35px 25px; }
+    .value-grid, .pricing-grid { grid-template-columns: 1fr; }
+    .content-box { padding: 35px 25px; }
 }
 
 @media (max-width: 480px) {
@@ -510,7 +519,6 @@ body {
     .hero-section h1 { font-size: 1.8rem; }
     .tagline { font-size: 1rem; }
     .section-heading { font-size: 1.5rem; }
-    .solution-icon { font-size: 2.5rem; }
-    .proof-stat { font-size: 2rem; }
+    .value-icon { font-size: 2.5rem; }
     .submit-btn { padding: 18px 45px; font-size: 1rem; }
 }

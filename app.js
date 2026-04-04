@@ -1,79 +1,71 @@
 // PIN8 CONTENT CREATORS SYSTEM
 
-// Toggle FAQ
-function toggleFaq(element) {
-    const answer = element.nextElementSibling;
-    const isHidden = answer.classList.contains('hidden');
-    
-    // Close all FAQs
-    document.querySelectorAll('.faq-answer').forEach(faq => {
-        faq.classList.add('hidden');
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     });
-    document.querySelectorAll('.faq-question').forEach(q => {
-        q.classList.remove('active');
-    });
-    
-    // Open clicked if was closed
-    if (isHidden) {
-        answer.classList.remove('hidden');
-        element.classList.add('active');
-    }
-}
+});
 
-// Submit Lead
-function submitLead() {
-    const name = document.getElementById('leadName').value.trim();
-    const email = document.getElementById('leadEmail').value.trim();
-    const phone = document.getElementById('leadPhone').value.trim();
-    const platform = document.getElementById('leadPlatform').value.trim();
-    const followers = document.getElementById('leadFollowers').value.trim();
-    const painPoints = document.getElementById('leadPainPoints').value.trim();
-    const goals = document.getElementById('leadGoals').value.trim();
-    const challenges = document.getElementById('leadChallenges').value.trim();
-    const inquiry = document.getElementById('leadInquiry').value.trim();
+// Form submission
+function submitForm(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const platform = document.getElementById('platform').value;
+    const followers = document.getElementById('followers').value;
+    const message = document.getElementById('message').value;
 
-    if (!name || !email) { 
-        alert('Name and Email are required'); 
-        return; 
-    }
-
+    // Save to localStorage
     const leadData = {
-        name, email, phone, platform, followers,
-        painPoints, goals, challenges, inquiry,
+        name, email, phone, platform, followers, message,
         stage: 'creator_discovery_request',
         timestamp: new Date().toISOString()
     };
 
-    saveLead(leadData);
-
-    alert('✅ Thank you ' + name + '!\n\nYour discovery call request has been received.\n\nWe will reach out within 48 hours to schedule your alignment call.\n\nThis is a conversation, not a commitment.');
-
-    // Clear form
-    document.getElementById('leadName').value = '';
-    document.getElementById('leadEmail').value = '';
-    document.getElementById('leadPhone').value = '';
-    document.getElementById('leadPlatform').value = '';
-    document.getElementById('leadFollowers').value = '';
-    document.getElementById('leadPainPoints').value = '';
-    document.getElementById('leadGoals').value = '';
-    document.getElementById('leadChallenges').value = '';
-    document.getElementById('leadInquiry').value = '';
-}
-
-// Save Lead to LocalStorage
-function saveLead(data) {
     const leads = JSON.parse(localStorage.getItem('pin8_creator_leads') || '[]');
-    leads.push(data);
+    leads.push(leadData);
     localStorage.setItem('pin8_creator_leads', JSON.stringify(leads));
-    console.log('💾 Creator Lead Saved:', data);
+
+    console.log('💾 Creator Lead Saved:', leadData);
+
+    alert('Thank you ' + name + '. Your request has been received. We will reach out within 48 hours to schedule your alignment call.');
+    e.target.reset();
 }
 
-// Console Commands
-console.log('%c📊 PIN8 CREATOR LEADS', 'color: #D4AF37; font-size: 20px; font-weight: bold;');
-console.log('%cType viewCreatorLeads() to see collected data', 'color: #888;');
+// Console commands
+console.log('%c PIN8 CREATOR LEADS', 'color: #D4AF37; font-size: 24px; font-weight: bold;');
+console.log('%c Type viewCreatorLeads() to see collected data', 'color: #888;');
 
 function viewCreatorLeads() {
     const leads = JSON.parse(localStorage.getItem('pin8_creator_leads') || '[]');
     console.table(leads);
     return leads;
 }
+
+// Add scroll animation to cards
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.feature, .card, .price-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});

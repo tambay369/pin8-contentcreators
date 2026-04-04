@@ -1,240 +1,524 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIN8 for Content Creators | Sovereign Growth System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- FLOATING WATERMARK LOGO -->
-    <div id="logo-watermark">PIN8</div>
-    <div id="watermark-text"></div>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <div class="page-container">
-        <!-- HERO -->
-        <div class="hero-section">
-            <h1 class="gold-text">PIN8 for Content Creators</h1>
-            <p class="tagline">Sovereign Growth • 0.369% Pulse • Exit Anytime</p>
-            <p class="subtitle">Track Revenue • Own Your Data • Scale Without Platform Dependency</p>
-            <a href="#pricing" class="hero-cta">GET STARTED →</a>
-        </div>
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        <!-- PROBLEM SECTION -->
-        <section class="problem-section">
-            <h2 class="section-heading gold-text">🎯 The Creator Problem</h2>
-            <div class="problem-box">
-                <p class="problem-lead"><strong>You create content across 5+ platforms.</strong> But your data is scattered. Your revenue is fragmented. Your audience isn't truly YOURS.</p>
-                <div class="problem-grid">
-                    <div class="problem-card">
-                        <span class="problem-icon">❌</span>
-                        <h4>Platform Lock-In</h4>
-                        <p>YouTube • TikTok • FB own your data. You rent access. They can ban you anytime.</p>
-                    </div>
-                    <div class="problem-card">
-                        <span class="problem-icon">❌</span>
-                        <h4>Revenue Blindness</h4>
-                        <p>AdSense • Sponsorships • Affiliate • Donations. No unified view. No real-time insights.</p>
-                    </div>
-                    <div class="problem-card">
-                        <span class="problem-icon">❌</span>
-                        <h4>Audience Fragmentation</h4>
-                        <p>Subscribers scattered across platforms. Can't export. Can't own. Can't monetize directly.</p>
-                    </div>
-                    <div class="problem-card">
-                        <span class="problem-icon">❌</span>
-                        <h4>Payment Dependency</h4>
-                        <p>Platform payouts • 30-45 day delays • High fees • No direct supporter connection.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+/* FLOATING WATERMARK LOGO */
+#logo-watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28rem;
+    font-weight: 700;
+    color: rgba(212, 175, 55, 0.03);
+    pointer-events: none;
+    z-index: 0;
+    animation: float 15s ease-in-out infinite;
+    letter-spacing: 2rem;
+}
 
-        <!-- SOLUTION SECTION -->
-        <section class="solution-section">
-            <h2 class="section-heading gold-text">✅ The PIN8 Solution</h2>
-            <div class="solution-box">
-                <p class="solution-lead"><strong>PIN8 is your Sovereign Creator Infrastructure.</strong> One dashboard. All platforms. You own everything.</p>
-                <div class="solution-grid">
-                    <div class="solution-card">
-                        <div class="solution-icon">📊</div>
-                        <h4>Unified Revenue Tracking</h4>
-                        <p>YouTube • TikTok • Facebook • Instagram • Sponsorships • Affiliate • Donations. All in one place. Real-time.</p>
-                    </div>
-                    <div class="solution-card">
-                        <div class="solution-icon">🔐</div>
-                        <h4>Data Sovereignty</h4>
-                        <p>Your analytics • Your audience • Your insights. Export anytime. No lock-in. You own 100%.</p>
-                    </div>
-                    <div class="solution-card">
-                        <div class="solution-icon">💰</div>
-                        <h4>Direct Support Links</h4>
-                        <p>GoTyme QR • GCash • Payment links. One click for your community to support you directly. No platform cut.</p>
-                    </div>
-                    <div class="solution-card">
-                        <div class="solution-icon">📈</div>
-                        <h4>Weekly Analytics Reports</h4>
-                        <p>Automated insights • Growth tracking • Performance alerts. Know what's working. Fix what's not.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+@keyframes float {
+    0%, 100% { 
+        opacity: 0.02; 
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    50% { 
+        opacity: 0.05; 
+        transform: translate(-48%, -52%) scale(1.1) rotate(0deg);
+    }
+}
 
-        <!-- HOW IT WORKS -->
-        <section class="how-it-works-section">
-            <h2 class="section-heading gold-text">🔧 How It Works</h2>
-            <div class="steps-container">
-                <div class="step-card">
-                    <div class="step-number">01</div>
-                    <h4>Register & Onboard</h4>
-                    <p>Fill out the form below → 15-min discovery call → We understand your creator ecosystem</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step-card">
-                    <div class="step-number">02</div>
-                    <h4>Sovereignty Setup</h4>
-                    <p>We setup your revenue tracker • dashboard • email list • payment links (3-5 days)</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step-card">
-                    <div class="step-number">03</div>
-                    <h4>Go Live & Scale</h4>
-                    <p>Start tracking • Start owning • Start scaling. Weekly check-ins. You grow, PIN8 grows.</p>
-                </div>
-            </div>
-        </section>
+#watermark-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+    color: #D4AF37;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
 
-        <!-- PRICING -->
-        <section id="pricing" class="pricing-section">
-            <h2 class="section-heading gold-text">💎 Tier-Based Pricing</h2>
-            <p class="section-subtitle">One-Time Activation • No Subscription Trap • Exit Anytime</p>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3 class="gold-text">🚀 STARTER</h3>
-                    <p class="price-subtitle">For Solo Creators (1K-10K followers)</p>
-                    <div class="price-box">
-                        <p class="price-note">Tier-Based</p>
-                        <p class="price-detail">Revealed After Call</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✅ Revenue tracker (Google Sheets)</li>
-                        <li>✅ Creator dashboard (Notion)</li>
-                        <li>✅ Email list setup (ConvertKit)</li>
-                        <li>✅ Cross-platform posting guide</li>
-                        <li>✅ 1-hour onboarding call</li>
-                        <li>✅ Weekly check-ins (4 weeks)</li>
-                        <li>✅ Direct support links</li>
-                    </ul>
-                    <a href="#lead-form" class="cta-btn">GET STARTED</a>
-                </div>
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
 
-                <div class="pricing-card featured">
-                    <div class="featured-badge">MOST POPULAR</div>
-                    <h3 class="gold-text">📈 GROWTH</h3>
-                    <p class="price-subtitle">For Growing Creators (10K-100K followers)</p>
-                    <div class="price-box">
-                        <p class="price-note">Tier-Based</p>
-                        <p class="price-detail">Revealed After Call</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✅ Everything in STARTER</li>
-                        <li>✅ Advanced analytics dashboard</li>
-                        <li>✅ Sponsorship tracker</li>
-                        <li>✅ Affiliate link management</li>
-                        <li>✅ Multi-platform automation</li>
-                        <li>✅ Bi-weekly strategy calls</li>
-                        <li>✅ Priority support</li>
-                    </ul>
-                    <a href="#lead-form" class="cta-btn">GET STARTED</a>
-                </div>
+.gold-text { 
+    color: #D4AF37; 
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.25); 
+}
 
-                <div class="pricing-card">
-                    <h3 class="gold-text">🏆 ENTERPRISE</h3>
-                    <p class="price-subtitle">For Creator Teams • Agencies • Studios</p>
-                    <div class="price-box">
-                        <p class="price-note">Custom Tier</p>
-                        <p class="price-detail">Revealed After Call</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✅ Everything in GROWTH</li>
-                        <li>✅ Custom dashboard development</li>
-                        <li>✅ API integrations</li>
-                        <li>✅ Multi-creator management</li>
-                        <li>✅ White-label options</li>
-                        <li>✅ Weekly strategy calls</li>
-                        <li>✅ Dedicated account manager</li>
-                    </ul>
-                    <a href="#lead-form" class="cta-btn">GET STARTED</a>
-                </div>
-            </div>
+/* HERO */
+.hero-section {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 2px solid #D4AF37;
+    border-radius: 15px;
+}
 
-            <div class="pricing-note-box">
-                <p>💡 <strong>When Your Business Grows, PIN8 Grows.</strong> PULSE fee (transaction-based • lower than MDRs) applies after activation. No hidden costs. No price increases. Tier-based pricing revealed after alignment call.</p>
-            </div>
-        </section>
+.hero-section h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+}
 
-        <!-- PROOF SECTION -->
-        <section class="proof-section">
-            <h2 class="section-heading gold-text">📊 Why Creators Choose PIN8</h2>
-            <div class="proof-grid">
-                <div class="proof-item">
-                    <p class="proof-stat">1-7 days</p>
-                    <p class="proof-label">To first revenue</p>
-                </div>
-                <div class="proof-item">
-                    <p class="proof-stat">₱0</p>
-                    <p class="proof-label">Platform lock-in</p>
-                </div>
-                <div class="proof-item">
-                    <p class="proof-stat">100%</p>
-                    <p class="proof-label">Data ownership</p>
-                </div>
-                <div class="proof-item">
-                    <p class="proof-stat">Anytime</p>
-                    <p class="proof-label">Exit rights</p>
-                </div>
-            </div>
-        </section>
+.tagline {
+    font-size: 1.3rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: italic;
+}
 
-        <!-- LEAD CAPTURE -->
-        <section id="lead-form" class="lead-section">
-            <h2 class="section-heading gold-text">🎯 Ready to Own Your Creator Empire?</h2>
-            <p class="section-subtitle">Let's start the conversation. No pressure. Pure clarity.</p>
-            
-            <div class="lead-form">
-                <div class="form-group">
-                    <h3 class="form-section-title">Contact Information</h3>
-                    <input type="text" id="leadName" placeholder="Full Name *" />
-                    <input type="email" id="leadEmail" placeholder="Email Address *" />
-                    <input type="tel" id="leadPhone" placeholder="Phone / WhatsApp" />
-                    <input type="text" id="leadPlatform" placeholder="Main Platform (YouTube • TikTok • etc.)" />
-                    <input type="text" id="leadFollowers" placeholder="Follower Count (approx.)" />
-                </div>
+.subtitle {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
 
-                <div class="form-group">
-                    <h3 class="form-section-title">Tell Us About Your Creator Journey</h3>
-                    <textarea id="leadPainPoints" placeholder="💭 Your Pain Points (What's frustrating you right now?)"></textarea>
-                    <textarea id="leadGoals" placeholder="🎯 Your Goals (What would success look like?)"></textarea>
-                    <textarea id="leadChallenges" placeholder="🚧 Your Challenges (What's blocking your growth?)"></textarea>
-                    <textarea id="leadInquiry" placeholder="❓ Special Inquiry (Any specific questions or concerns?)"></textarea>
-                </div>
-                
-                <button onclick="submitLead()" class="submit-btn">REQUEST DISCOVERY CALL</button>
-                <p class="form-hint">This is a conversation, not a commitment. We'll reach out within 48 hours.</p>
-            </div>
-        </section>
+.hero-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: #000;
+    padding: 18px 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
 
-        <footer class="main-footer">
-            <p class="gold-text">PIN8 for Content Creators</p>
-            <p>Sovereign Growth • 0.369% Pulse • Exit Anytime</p>
-            <p class="small">© 2026 PIN8 Ecosystem • Confidential</p>
-            <p class="small">Protected by PIN8 Sovereignty Guards 🔐</p>
-        </footer>
-    </div>
+.hero-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+}
 
-    <script src="app.js"></script>
-</body>
-</html>
+/* CONTENT BOXES */
+.content-box {
+    background: rgba(10, 10, 10, 0.8);
+    border: 2px solid #D4AF37;
+    padding: 45px;
+    border-radius: 12px;
+    margin: 25px 0;
+    line-height: 1.9;
+    color: #aaa;
+}
+
+.content-box.highlight {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    border-color: #FFD700;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: #D4AF37;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* FEATURE MINI */
+.feature-mini {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-mini h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.feature-mini p {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* VALUE GRID */
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 35px 0;
+}
+
+.value-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.value-card h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* SECTIONS */
+.what-is-pin8, .creators-value, .faq-section, .pricing-section, .lead-section {
+    margin: 80px 0;
+}
+
+.section-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* FAQ SECTION */
+.faq-item {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1.5px solid #333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    border-color: #D4AF37;
+}
+
+.faq-question {
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.faq-question:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.toggle-icon {
+    color: #D4AF37;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-question.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 30px 25px 30px;
+    color: #aaa;
+    line-height: 1.8;
+    border-top: 1px solid #222;
+}
+
+.faq-answer ul, .faq-answer ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.faq-answer li {
+    margin: 12px 0;
+}
+
+/* PRICING */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.pricing-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.pricing-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border-color: #FFD700;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0.6) 100%);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pricing-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.price-subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.price-box {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1.5px solid #D4AF37;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.price-note {
+    color: #D4AF37;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.price-detail {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    color: #aaa;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: #000;
+    padding: 16px 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+}
+
+.pricing-note-box {
+    background: rgba(212, 175, 55, 0.05);
+    border-left: 3px solid #D4AF37;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.pricing-note-box p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* LEAD SECTION */
+.lead-section {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 2px solid #D4AF37;
+    padding: 60px 45px;
+    border-radius: 15px;
+}
+
+.lead-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-section-title {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 10px;
+}
+
+.lead-form input,
+.lead-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1.5px solid #D4AF37;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.lead-form input:focus,
+.lead-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    border-color: #FFD700;
+}
+
+.lead-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: #000;
+    border: none;
+    padding: 20px 60px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 30px 0 15px 0;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+}
+
+.form-hint {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* FOOTER */
+.main-footer {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+    border-top: 2px solid #333;
+}
+
+.main-footer p { margin: 10px 0; }
+.main-footer .small { 
+    font-size: 0.85rem; 
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .value-grid, .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    #logo-watermark { font-size: 15rem; }
+    .hero-section h1 { font-size: 2.2rem; }
+    .section-heading { font-size: 1.8rem; }
+    .value-grid, .pricing-grid { grid-template-columns: 1fr; }
+    .content-box { padding: 35px 25px; }
+}
+
+@media (max-width: 480px) {
+    #logo-watermark { font-size: 12rem; }
+    .hero-section h1 { font-size: 1.8rem; }
+    .tagline { font-size: 1rem; }
+    .section-heading { font-size: 1.5rem; }
+    .value-icon { font-size: 2.5rem; }
+    .submit-btn { padding: 18px 45px; font-size: 1rem; }
+}

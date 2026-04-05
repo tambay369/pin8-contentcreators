@@ -1,20 +1,4 @@
-// Form Handling
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const submitBtn = this.querySelector('.btn-submit');
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        alert('Thank you! We\'ll get back to you within 24 hours. 🙏');
-        this.reset();
-        submitBtn.textContent = 'Get Free Consultation';
-        submitBtn.disabled = false;
-    }, 1500);
-});
-
-// Smooth Scrolling
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -25,15 +9,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar Scroll Effect
+// Navbar scroll effect
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.99)';
+        navbar.style.boxShadow = '0 2px 20px rgba(212, 175, 55, 0.15)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.boxShadow = 'none';
     }
 });
 
+// Form submission enhancement
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', function() {
+        const submitBtn = this.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Request Sent. We\'ll reply within 24 hours. 🙏';
+        submitBtn.style.background = '#4CAF50';
+        submitBtn.disabled = true;
+    });
+}
+
 console.log('✅ PIN8 PRIME SPINE SYSTEM Loaded');
 console.log('🏛️ PARIAH INFINOVATION - PIN8 IT SOLUTIONS');
+console.log('🔒 Creator Node Pricing v1.0 • Fair. Right. Just.');

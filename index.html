@@ -3,76 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PIN8 PRIME SPINE System — Sovereign infrastructure for content creators. Own your data. Track your revenue. Scale with sovereignty.">
+    <meta name="theme-color" content="#0a0a0a">
     <title>PIN8 PRIME SPINE SYSTEM | Sovereign Infrastructure for Content Creators</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --black: #0a0a0a;
-            --dark: #111111;
-            --gray: #1a1a1a;
-            --medium: #2a2a2a;
-            --gold: #D4AF37;
-            --gold-light: #E6C973;
-            --white: #ffffff;
-            --text: #cccccc;
-        }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: var(--black);
-            color: var(--white);
-            line-height: 1.8;
-        }
-        h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
-        
-        /* Navigation */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 10, 10, 0.98);
-            border-bottom: 1px solid var(--gold);
-            padding: 20px 0;
-            z-index: 1000;
-        }
-        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.4rem; font-weight: 700; color: var(--gold); letter-spacing: 2px; }
-        .nav-links { display: flex; list-style: none; gap: 35px; align-items: center; }
-        .nav-links a { color: var(--text); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
-        .nav-links a:hover { color: var(--gold); }
-        .btn-nav { background: var(--gold); color: var(--black) !important; padding: 10px 25px; border-radius: 3px; font-weight: 600; }
-        
-        /* Buttons */
-        .btn { display: inline-block; padding: 15px 40px; background: var(--gold); color: var(--black); text-decoration: none; border-radius: 3px; font-weight: 600; border: none; cursor: pointer; transition: 0.3s; font-size: 1rem; margin: 5px; }
-        .btn:hover { background: var(--gold-light); transform: translateY(-2px); }
-        .btn-primary { background: var(--gold); }
-        
-        /* Sections */
-        .section { padding: 100px 0; }
-        .section-title { font-size: 2.8rem; text-align: center; color: var(--gold); margin-bottom: 20px; }
-        .section-subtitle { text-align: center; color: var(--text); font-size: 1.1rem; max-width: 700px; margin: 0 auto 60px; }
-        
-        /* Hero */
-        .hero { padding: 180px 0 120px; text-align: center; background: var(--black); }
-        .hero-title { font-size: 3.5rem; color: var(--white); margin-bottom: 30px; line-height: 1.2; }
-        .hero-subtitle { font-size: 1.3rem; color: var(--text); max-width: 800px; margin: 0 auto 50px; }
-        .hero-note { margin-top: 25px; color: var(--text); font-size: 0.95rem; font-style: italic; }
-        
-        /* Vision */
-        .vision { background: var(--dark); }
-        .vision-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px; }
-        .vision-card { padding: 40px; background: var(--medium); border-radius: 5px; border-left: 3px solid var(--gold); }
-        .vision-card h3 { color: var(--gold); margin-bottom: 15px; font-size: 1.4rem; }
-        .vision-card p { color: var(--text); }
-        .vision-statement { text-align: center; padding: 40px; background: var(--medium); border-radius: 5px; border: 1px solid var(--gold); font-size: 1.2rem; }
-        
-         <!-- FAQ Section -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PIN8 PRIME SPINE SYSTEM</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#education">What is PIN8</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#access">Founding Access</a></li>
+                <li><a href="#sovereignty">Sovereignty</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27m%20interested%20in%20sovereign%20infrastructure%20for%20my%20creator%20business.%20Can%20we%20discuss%20the%20Founding%20Creator%20Program%3F" target="_blank" class="btn-nav">Begin Conversation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="beta-badge">[BETA • FOUNDING CREATOR PROGRAM]</div>
+            <h1 class="hero-title">Platforms are tools.<br><span class="gold-text">You are the creator.</span></h1>
+            <p class="hero-subtitle">20 years of sovereign architecture, deployed for your freedom. We build the infrastructure. You own the system.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27m%20interested%20in%20sovereign%20infrastructure%20for%20my%20creator%20business.%20Can%20we%20discuss%20the%20Founding%20Creator%20Program%3F" target="_blank" class="btn btn-primary">Begin Sovereign Conversation</a>
+                <a href="#education" class="btn btn-outline">Understand Why</a>
+            </div>
+            <p class="hero-note">No pitch. No pressure. Just clarity.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">What is the SPINE?</h2>
+            <p class="section-subtitle">Understanding the foundation before the system.</p>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-icon">🦴</div>
+                    <h3>In the Human Body</h3>
+                    <p>The spine is your central support structure. It connects your brain to every part of your body. Without it, nothing functions together. It's the backbone of movement, stability, and life.</p>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon">🏛️</div>
+                    <h3>In Architecture</h3>
+                    <p>Every building has a structural spine — the framework that holds everything together. Foundation, beams, columns. Without it, the building collapses. It's the invisible strength you depend on.</p>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon">🛡️</div>
+                    <h3>In PIN8</h3>
+                    <p>PIN8 PRIME SPINE SYSTEM is the backbone of your creator business. It connects your revenue, audience, and growth data into one sovereign system. Without it, you're scattered. With it, you're sovereign.</p>
+                </div>
+            </div>
+
+            <div class="education-statement">
+                <p><strong>What is PIN8 for Everyone?</strong></p>
+                <p>Sovereign infrastructure. Own your data. Control your systems. No lock-in. No dependence. Freedom to build, scale, and evolve on your terms.</p>
+                <p class="statement-divider">•</p>
+                <p><strong>What is PIN8 for Content Creators?</strong></p>
+                <p>Your nervous system. Connects YouTube, Facebook, TikTok, Instagram, sponsorships, affiliates — all into ONE dashboard. You see YOUR business. Not platform silos. That's sovereignty.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section problem">
+        <div class="container">
+            <h2 class="section-title">The Problem Most Creators Don't See</h2>
+            <p class="section-subtitle">Platforms show you THEIR data. Not your business.</p>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📺</div>
+                    <h3>YouTube Studio</h3>
+                    <p>Shows YouTube earnings <strong>ONLY</strong></p>
+                    <p class="problem-detail">Can't see Facebook, TikTok, sponsorships, or affiliate income.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📘</div>
+                    <h3>Facebook Creator Studio</h3>
+                    <p>Shows Facebook earnings <strong>ONLY</strong></p>
+                    <p class="problem-detail">Can't see YouTube, TikTok, direct brand deals, or fan support.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🎵</div>
+                    <h3>TikTok Creator Fund</h3>
+                    <p>Shows TikTok earnings <strong>ONLY</strong></p>
+                    <p class="problem-detail">Can't see YouTube, Facebook, sponsorships, or other revenue streams.</p>
+                </div>
+            </div>
+
+            <div class="problem-reality">
+                <h3>You Have Multiple Income Streams:</h3>
+                <ul class="stream-list">
+                    <li>YouTube Ads</li>
+                    <li>Facebook In-Stream</li>
+                    <li>TikTok Creator Fund</li>
+                    <li>Sponsorships & Brand Deals</li>
+                    <li>Affiliate Commissions</li>
+                    <li>Direct Fan Support</li>
+                </ul>
+                
+                <div class="problem-question">
+                    <p><strong>Question: Where do you see it ALL in ONE place?</strong></p>
+                </div>
+
+                <div class="problem-impact">
+                    <div class="impact-item">
+                        <span class="cross">❌</span>
+                        <p>You manually combine 5-7 different dashboards</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="cross">❌</span>
+                        <p>You spend 2-3 hours/month just tracking revenue</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="cross">❌</span>
+                        <p>You don't know which platform actually pays most</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="cross">❌</span>
+                        <p>Tax time becomes a nightmare of scattered data</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="cross">❌</span>
+                        <p>You're flying blind about your own business</p>
+                    </div>
+                </div>
+
+                <p class="problem-conclusion"><strong>Platforms show you THEIR data. You're left to figure out YOUR business.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section solution">
+        <div class="container">
+            <h2 class="section-title">PIN8 Shows You YOUR Business</h2>
+            <p class="section-subtitle">One dashboard. One truth. Complete sovereignty.</p>
+            
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>All Platforms, Unified</h3>
+                    <p>YouTube, Facebook, TikTok, Instagram, sponsorships, affiliate — connected into one sovereign system. No more scattered numbers.</p>
+                </div>
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>Auto-Updated Revenue</h3>
+                    <p>System reads your platforms directly. No manual entry. No screenshots. No waiting. Dashboard updates automatically.</p>
+                </div>
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>True Business Clarity</h3>
+                    <p>See which platform pays most. Track sponsorship ROI. Know your exact monthly revenue. Make decisions with data.</p>
+                </div>
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>Tax-Ready Reports</h3>
+                    <p>Export anytime. BIR-compliant formats. Quarterly summaries. Year-end reports. Your accountant will thank you.</p>
+                </div>
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>Transparent PULSE Fee</h3>
+                    <p>0.369% per transaction. Capped monthly. 6× lower than industry standard. You see exactly what you pay.</p>
+                </div>
+                <div class="solution-card">
+                    <span class="check-icon">✓</span>
+                    <h3>Time Reclaimed</h3>
+                    <p>Stop spending 2-3 hours/month manually tracking. Start creating. We handle the infrastructure. You handle the art.</p>
+                </div>
+            </div>
+
+            <div class="solution-statement">
+                <p class="statement-large"><strong>Platforms show you THEIR data.</strong></p>
+                <p class="statement-large gold-text"><strong>PIN8 shows you YOUR business.</strong></p>
+                <p class="statement-sub">That's sovereignty.</p>
+                <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27m%20interested%20in%20sovereign%20infrastructure%20for%20my%20creator%20business.%20Can%20we%20discuss%20the%20Founding%20Creator%20Program%3F" target="_blank" class="btn btn-primary btn-large">See It In Action</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="section access">
+        <div class="container">
+            <h2 class="section-title">Founding Creator Access</h2>
+            <p class="section-subtitle">Limited slots. Founding benefits. Sovereign forever.</p>
+            
+            <div class="access-intro">
+                <p class="intro-highlight"><strong>Try it for 15, 30, or 45 days... for only ₱369.</strong></p>
+                <p>Full PIN8 PRIME SPINE SYSTEM access during trial. Premium Access based on your Tier Category. Tier-Based Pricing Principles. Right. Fair. Just. 369-frequency computed.</p>
+            </div>
+
+            <div class="access-options">
+                <!-- Trial Card -->
+                <div class="access-card featured">
+                    <div class="access-badge">START HERE</div>
+                    <h3>Sovereign Trial</h3>
+                    <p class="access-desc">Experience full sovereignty before committing. Founding Creator benefits included.</p>
+                    <div class="access-price">
+                        <span class="price-main">₱369</span>
+                        <span class="price-period">one-time</span>
+                        <span class="price-alt">15, 30, or 45 days (your choice)</span>
+                    </div>
+                    <ul class="access-features">
+                        <li><span class="check">✓</span> Full PIN8 PRIME SPINE SYSTEM access</li>
+                        <li><span class="check">✓</span> Premium Access based on Tier Category</li>
+                        <li><span class="check">✓</span> Auto-updated revenue dashboard</li>
+                        <li><span class="check">✓</span> Data export anytime (free)</li>
+                        <li><span class="check">✓</span> Email support</li>
+                        <li><span class="check">✓</span> PULSE Fee: WAIVED during trial</li>
+                        <li><span class="check">✓</span> No auto-billing. No pressure.</li>
+                    </ul>
+                    <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27d%20like%20to%20start%20the%20Sovereign%20Trial.%20Please%20send%20me%20the%20details." target="_blank" class="btn btn-primary">Start Trial</a>
+                </div>
+
+                <!-- Founding Benefits -->
+                <div class="access-card">
+                    <div class="access-badge founding">FOUNDING CREATOR</div>
+                    <h3>Founding Benefits</h3>
+                    <p class="access-desc">Join the first wave of sovereign creators. Lock in advantages forever.</p>
+                    <ul class="access-features">
+                        <li><span class="check">✓</span> Founding Creator pricing (locked forever)</li>
+                        <li><span class="check">✓</span> Direct input on feature priorities</li>
+                        <li><span class="check">✓</span> Priority support from architecture team</li>
+                        <li><span class="check">✓</span> Early access to new features</li>
+                        <li><span class="check">✓</span> Founding Creator badge & recognition</li>
+                        <li><span class="check">✓</span> All 6 Sovereignty Safeguards</li>
+                    </ul>
+                    <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27m%20interested%20in%20the%20Founding%20Creator%20Program.%20Can%20we%20discuss%20details%3F" target="_blank" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Growth Alignment -->
+            <div class="growth-alignment">
+                <h3>When You Grow, PIN8 Grows</h3>
+                <p class="growth-detail">Start Small. Grow Big. Scale BIGGER. As your revenue increases, your Tier expands accordingly. Grace periods apply. No penalties for changes. Fair. Right. Just.</p>
+                <div class="growth-flow">
+                    <div class="flow-item">
+                        <span class="flow-stage">Small</span>
+                        <span class="flow-arrow">→</span>
+                    </div>
+                    <div class="flow-item">
+                        <span class="flow-stage">Big</span>
+                        <span class="flow-arrow">→</span>
+                    </div>
+                    <div class="flow-item">
+                        <span class="flow-stage">BIGGER</span>
+                    </div>
+                </div>
+                <p class="growth-note">Premium Access scales with your success. Tier-Based Pricing Principles. Customized to your complexity. Full details in consultation.</p>
+            </div>
+
+            <!-- Payment Terms -->
+            <div class="payment-terms">
+                <h3>Payment Flexibility</h3>
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <span class="term-icon">📅</span>
+                        <strong>Monthly</strong>
+                        <p>Flexible • Standard rate</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="term-icon">📅</span>
+                        <strong>Yearly</strong>
+                        <p>Preferred • Best value</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="term-icon">💳</span>
+                        <strong>Payment Plans</strong>
+                        <p>Available • Tier-dependent</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="term-icon">🔒</span>
+                        <strong>No Lock-In</strong>
+                        <p>Cancel anytime • 30-day notice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sovereignty Section -->
+    <section id="sovereignty" class="section sovereignty">
+        <div class="container">
+            <h2 class="section-title">Sovereignty Safeguards</h2>
+            <p class="section-subtitle">What ALL creators receive. No exceptions. Non-negotiable.</p>
+            
+            <div class="sovereignty-grid">
+                <div class="sovereignty-card">
+                    <span class="sov-icon">🔐</span>
+                    <h3>Data Ownership</h3>
+                    <p>You own 100% of your data. Forever. PIN8 is the processor. You are the owner.</p>
+                </div>
+                <div class="sovereignty-card">
+                    <span class="sov-icon">📤</span>
+                    <h3>Data Export</h3>
+                    <p>Export anytime. Standard formats (CSV, Excel, PDF). Free. No restrictions.</p>
+                </div>
+                <div class="sovereignty-card">
+                    <span class="sov-icon">🚪</span>
+                    <h3>Exit Freedom</h3>
+                    <p>Cancel with 30-day notice. No penalties. No guilt. No lock-in contracts.</p>
+                </div>
+                <div class="sovereignty-card">
+                    <span class="sov-icon">⚖️</span>
+                    <h3>Price Transparency</h3>
+                    <p>All costs disclosed upfront. No hidden fees. No surprise charges. Ever.</p>
+                </div>
+                <div class="sovereignty-card">
+                    <span class="sov-icon">📢</span>
+                    <h3>90-Day Notice</h3>
+                    <p>Price increases require 90-day written notice. You decide whether to continue.</p>
+                </div>
+                <div class="sovereignty-card">
+                    <span class="sov-icon">🛡️</span>
+                    <h3>Compliance</h3>
+                    <p>Official APIs only. Data Privacy Act compliant. Encrypted. Secure. Legitimate.</p>
+                </div>
+            </div>
+
+            <div class="compliance-badge">
+                <span class="badge-icon">🛡️</span>
+                <p><strong>Data Privacy Act Compliant</strong> (RA 10173 • Philippines)</p>
+            </div>
+
+            <div class="sovereignty-statement">
+                <p><strong>These are not features. These are rights.</strong></p>
+                <p class="statement-sub">Every creator. Every tier. Every time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
     <section id="faq" class="section faq">
         <div class="container">
             <h2 class="section-title">Common Questions</h2>
             <p class="section-subtitle">Honest answers. Strategic clarity.</p>
+            
             <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question">
@@ -85,403 +369,56 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What is PIN8 PRIME SPINE SYSTEM?</h3>
+                        <h3>What platforms does PIN8 connect to?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>PIN8 PRIME SPINE SYSTEM is the deployment of sovereign infrastructure for content creators. It's not a template. It's not a course. It's custom-built infrastructure that you own — forever. The complete system overview is shared during your consultation.</p>
+                        <p>PIN8 connects to all major creator platforms through official, compliant APIs. The specific platforms available for your Tier Category are revealed during your consultation. We ensure full compliance and data sovereignty.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Why is this important for Content Creators?</h3>
+                        <h3>How much does PIN8 cost?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Most creators rent their audience from platforms. Algorithm changes can erase years of work overnight. PIN8 gives you ownership — of your data, your revenue tracking, your audience relationships. You create. You own. You control. That's sovereignty.</p>
+                        <p>We follow Tier-Based Pricing Principles — Right. Fair. Just. 369-frequency computed. Trial access is ₱369 for 15, 30, or 45 days. Full pricing is customized to your complexity and revealed during your consultation. No hidden fees. Ever.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>How is this different from Google Sheets or Notion?</h3>
+                        <h3>What features are included?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Templates are static. PIN8 is infrastructure. We build a living system that grows with you — automated where it matters, manual where it doesn't, and always under your control. The specific differentiators are discussed during your consultation.</p>
+                        <p>Full PIN8 PRIME SPINE SYSTEM access includes sovereign infrastructure for your creator business. Features vary by Tier Category — from essential revenue tracking to advanced analytics. All tiers include the 6 Sovereignty Safeguards. Specific features are revealed during your consultation.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Do I need technical skills?</h3>
+                        <h3>Is my data safe?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>No. We build it. We train you. You use it. If you can check Facebook, you can use PIN8. The system is designed to be intuitive — sophisticated infrastructure, simple interface.</p>
+                        <p>Yes. We use official APIs only (no screen scraping). Data is encrypted (AES-256). We're compliant with Philippines Data Privacy Act (RA 10173). You own 100% of your data. Export anytime. Delete anytime. No lock-in.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What platforms does this work with?</h3>
+                        <h3>Can I upgrade or downgrade later?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>All of them. YouTube, Facebook, TikTok, Instagram, sponsorships, affiliates, fan support — we unify everything. The specific integrations available for your tier are discussed during your consultation.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long does deployment take?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Anywhere from 30 minutes to 4 weeks, depending on your tier and complexity. Starter tiers are near-instant. Enterprise tiers are fully custom. We'll give you a precise timeline during your consultation.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What happens after I own it?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>It's yours. Forever. You can export your data anytime. You can leave anytime. You can grow without penalty. We're here for support, but you're never locked in. That's what sovereignty means.</p>
+                        <p>Yes. Anytime. Upgrade when you grow. Downgrade if needed. Grace periods apply. No penalties. No lock-in. Sovereignty means freedom to evolve. Full details in your consultation.</p>
                     </div>
                 </div>
             </div>
+            
             <div class="faq-note">
-                <p><strong>Have more questions?</strong> The full picture — including system architecture, tier specifics, and implementation details — is shared during your consultation. No pitch. Just clarity.</p>
-            </div>
-        </div>
-    </section>
-        
-        /* Investment */
-        .investment { background: var(--dark); }
-        .investment-intro { max-width: 900px; margin: 0 auto 60px; text-align: center; }
-        .investment-note { color: var(--text); font-size: 1rem; line-height: 1.8; }
-        .investment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        .investment-card { background: var(--medium); padding: 40px; border-radius: 5px; border: 1px solid var(--gray); text-align: center; transition: 0.3s; }
-        .investment-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .investment-card h3 { color: var(--gold); font-size: 1.4rem; margin-bottom: 20px; }
-        .investment-range { font-size: 2rem; font-weight: 700; color: var(--white); margin: 15px 0; }
-        .investment-detail { color: var(--text); font-size: 0.9rem; margin: 10px 0; }
-        .investment-sub { color: var(--text); font-size: 0.85rem; }
-        .payment-terms { background: var(--medium); padding: 40px; border-radius: 5px; border: 1px solid var(--gold); margin-bottom: 40px; }
-        .payment-terms h3 { color: var(--gold); text-align: center; margin-bottom: 30px; }
-        .terms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; }
-        .term-item { text-align: center; padding: 20px; background: var(--gray); border-radius: 5px; }
-        .term-item strong { color: var(--gold); display: block; margin-bottom: 10px; }
-        .term-item p { color: var(--text); font-size: 0.9rem; }
-        .growth-alignment { text-align: center; padding: 40px; background: var(--medium); border-radius: 5px; border-left: 4px solid var(--gold); margin-bottom: 40px; }
-        .growth-alignment h3 { color: var(--gold); margin-bottom: 15px; }
-        .growth-alignment p { color: var(--text); max-width: 800px; margin: 0 auto; }
-        .pulse-fee { text-align: center; padding: 40px; background: var(--medium); border-radius: 5px; border: 1px solid var(--gold); }
-        .pulse-fee h3 { color: var(--gold); margin-bottom: 15px; }
-        .pulse-rate { font-size: 2.5rem; font-weight: 700; color: var(--gold-light); margin: 15px 0; }
-        .pulse-detail { color: var(--text); }
-        
-        /* Process */
-        .process { background: var(--black); }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px; }
-        .process-step { text-align: center; padding: 30px; }
-        .step-num { display: block; font-size: 3rem; font-weight: 700; color: var(--gold); opacity: 0.3; margin-bottom: 10px; }
-        .process-step h3 { color: var(--gold); margin: 15px 0; }
-        .process-step p { color: var(--text); }
-        .process-cta { text-align: center; padding: 40px; background: var(--medium); border-radius: 5px; border: 1px solid var(--gold); }
-        .process-note { color: var(--text); margin-top: 15px; font-style: italic; }
-        
-        /* Safeguards */
-        .safeguards { background: var(--dark); }
-        .safeguards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .safeguard-item { display: flex; align-items: flex-start; gap: 20px; padding: 25px; background: var(--medium); border-radius: 5px; }
-        .check { color: var(--gold); font-weight: bold; font-size: 1.5rem; flex-shrink: 0; }
-        .safeguard-item strong { color: var(--gold); display: block; margin-bottom: 8px; }
-        .safeguard-item p { color: var(--text); font-size: 0.95rem; }
-        
-        /* Contact */
-        .contact { background: var(--black); }
-        .contact-container { max-width: 800px; margin: 0 auto; }
-        .contact-methods { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px; }
-        .contact-card { display: flex; align-items: center; gap: 20px; padding: 25px; background: var(--medium); border-radius: 5px; text-decoration: none; color: var(--white); transition: 0.3s; }
-        .contact-card:hover { border: 1px solid var(--gold); transform: translateY(-2px); }
-        .contact-card .icon { font-size: 1.8rem; }
-        .contact-card strong { display: block; color: var(--gold); margin-bottom: 5px; }
-        .contact-card p { color: var(--text); font-size: 0.95rem; }
-        .contact-form { background: var(--medium); padding: 40px; border-radius: 5px; }
-        .form-group { margin-bottom: 25px; }
-        label { display: block; color: var(--gold); margin-bottom: 10px; font-size: 0.95rem; }
-        input, select, textarea { width: 100%; padding: 15px; background: var(--dark); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 3px; color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 1rem; }
-        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--gold); }
-        .form-note { text-align: center; color: var(--text); font-size: 0.85rem; margin-top: 20px; }
-        
-        /* Company Branding */
-        .company-branding { background: var(--black); padding: 80px 0; border-top: 2px solid var(--gold); }
-        .branding-content { text-align: center; }
-        .branding-text h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 10px; }
-        .branding-text h3 { font-size: 1.5rem; color: var(--gold-light); margin-bottom: 15px; }
-        .branding-text > p { color: var(--text); max-width: 700px; margin: 0 auto; }
-        
-        /* Footer */
-        .footer { background: var(--dark); border-top: 1px solid var(--gold); padding: 50px 0 30px; }
-        .footer-content { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
-        .footer-brand h3 { color: var(--gold); margin-bottom: 10px; }
-        .footer-brand p { color: var(--text); }
-        .footer-links { display: flex; gap: 30px; }
-        .footer-links a { color: var(--text); text-decoration: none; transition: 0.3s; }
-        .footer-links a:hover { color: var(--gold); }
-        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid rgba(212, 175, 55, 0.2); color: var(--text); font-size: 0.9rem; }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .logo { font-size: 1.2rem; }
-            .hero-title { font-size: 2.3rem; }
-            .hero-subtitle { font-size: 1.1rem; }
-            .section-title { font-size: 2.2rem; }
-            .contact-methods { grid-template-columns: 1fr; }
-            .footer-content { flex-direction: column; text-align: center; gap: 30px; }
-            .footer-links { flex-direction: column; gap: 15px; }
-            .investment-grid { grid-template-columns: 1fr; }
-            .payment-terms .terms-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">PIN8 PRIME SPINE SYSTEM</div>
-            <ul class="nav-links">
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#faq">Insights</a></li>
-                <li><a href="#investment">Investment</a></li>
-                <li><a href="https://wa.me/639662497803" target="_blank" class="btn-nav">Begin Conversation</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Platforms are tools.<br>You are the creator.</h1>
-            <p class="hero-subtitle">20 years of sovereign architecture, deployed for your freedom. We build the infrastructure. You own the system.</p>
-            <div class="hero-cta">
-                <a href="https://wa.me/639662497803" target="_blank" class="btn btn-primary">Begin Sovereign Conversation</a>
-            </div>
-            <p class="hero-note">No pitch. No pressure. Just clarity.</p>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="section vision">
-        <div class="container">
-            <h2 class="section-title">What We Build</h2>
-            <p class="section-subtitle">Infrastructure for creators who are ready to own, not rent.</p>
-            <div class="vision-grid">
-                <div class="vision-card">
-                    <h3>Revenue Intelligence</h3>
-                    <p>Unified tracking across all your income streams. One dashboard. One truth. No more scattered numbers.</p>
-                </div>
-                <div class="vision-card">
-                    <h3>Audience Sovereignty</h3>
-                    <p>Your audience belongs to you. Export anytime. No platform lock-in. No algorithm hostage.</p>
-                </div>
-                <div class="vision-card">
-                    <h3>Growth Architecture</h3>
-                    <p>See which content actually makes money. Build with intention, not guesswork.</p>
-                </div>
-            </div>
-            <div class="vision-statement">
-                <p><strong>We don't sell tools.</strong> We build sovereign infrastructure for creators who understand that freedom requires ownership.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="section faq">
-        <div class="container">
-            <h2 class="section-title">Common Questions</h2>
-            <p class="section-subtitle">Honest answers. Strategic clarity.</p>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>What is the SPINE?</h3>
-                    <p>SPINE is our proprietary architecture framework — the backbone that connects your revenue, audience, and growth data into one sovereign system. Think of it as the central nervous system for your creator business. The full architecture is revealed during your consultation.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What is PIN8 PRIME SPINE SYSTEM?</h3>
-                    <p>PIN8 PRIME SPINE SYSTEM is the deployment of sovereign infrastructure for content creators. It's not a template. It's not a course. It's custom-built infrastructure that you own — forever. The complete system overview is shared during your consultation.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Why is this important for Content Creators?</h3>
-                    <p>Most creators rent their audience from platforms. Algorithm changes can erase years of work overnight. PIN8 gives you ownership — of your data, your revenue tracking, your audience relationships. You create. You own. You control. That's sovereignty.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How is this different from Google Sheets or Notion?</h3>
-                    <p>Templates are static. PIN8 is infrastructure. We build a living system that grows with you — automated where it matters, manual where it doesn't, and always under your control. The specific differentiators are discussed during your consultation.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do I need technical skills?</h3>
-                    <p>No. We build it. We train you. You use it. If you can check Facebook, you can use PIN8. The system is designed to be intuitive — sophisticated infrastructure, simple interface.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What platforms does this work with?</h3>
-                    <p>All of them. YouTube, Facebook, TikTok, Instagram, sponsorships, affiliates, fan support — we unify everything. The specific integrations available for your tier are discussed during your consultation.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How long does deployment take?</h3>
-                    <p>Anywhere from 30 minutes to 4 weeks, depending on your tier and complexity. Starter tiers are near-instant. Enterprise tiers are fully custom. We'll give you a precise timeline during your consultation.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What happens after I own it?</h3>
-                    <p>It's yours. Forever. You can export your data anytime. You can leave anytime. You can grow without penalty. We're here for support, but you're never locked in. That's what sovereignty means.</p>
-                </div>
-            </div>
-            <div class="faq-note">
-                <p><strong>Have more questions?</strong> The full picture — including system architecture, tier specifics, and implementation details — is shared during your consultation. No pitch. Just clarity.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Investment Section -->
-    <section id="investment" class="section investment">
-        <div class="container">
-            <h2 class="section-title">Investment Range</h2>
-            <p class="section-subtitle">Fair pricing. Growth-aligned. 369 frequency maintained.</p>
-            <div class="investment-intro">
-                <p class="investment-note"><strong>Important:</strong> Exact pricing is determined after a Creator Complexity Assessment. This ensures you pay for what you need — nothing more, nothing less. The ranges below reflect typical investments by creator stage.</p>
-            </div>
-            <div class="investment-grid">
-                <div class="investment-card">
-                    <h3>Emerging Creators</h3>
-                    <p class="investment-range">₱369 — ₱3,690</p>
-                    <p class="investment-detail">one-time license</p>
-                    <p class="investment-sub">+ annual subscription</p>
-                </div>
-                <div class="investment-card">
-                    <h3>Professional Creators</h3>
-                    <p class="investment-range">₱3,690 — ₱36,900</p>
-                    <p class="investment-detail">one-time license</p>
-                    <p class="investment-sub">+ annual subscription</p>
-                </div>
-                <div class="investment-card">
-                    <h3>Enterprise Creators</h3>
-                    <p class="investment-range">₱36,900 — ₱369,000</p>
-                    <p class="investment-detail">one-time license</p>
-                    <p class="investment-sub">+ annual subscription</p>
-                </div>
-            </div>
-            <div class="payment-terms">
-                <h3>Payment Structure</h3>
-                <div class="terms-grid">
-                    <div class="term-item">
-                        <strong>📅 Yearly</strong>
-                        <p>Preferred • Best value</p>
-                    </div>
-                    <div class="term-item">
-                        <strong>📅 Quarterly</strong>
-                        <p>Acceptable • Standard rate</p>
-                    </div>
-                    <div class="term-item">
-                        <strong>📅 Monthly</strong>
-                        <p>Available • Last resort</p>
-                    </div>
-                    <div class="term-item">
-                        <strong>💳 Payment Plans</strong>
-                        <p>3-12 months • Tier-dependent</p>
-                    </div>
-                </div>
-            </div>
-            <div class="growth-alignment">
-                <h3>When You Grow, PIN8 Grows</h3>
-                <p>Tier upgrades include grace periods at your old rate. Downgrades allowed with 30-day notice. No penalties. No lock-in. Sovereignty means freedom to evolve.</p>
-            </div>
-            <div class="pulse-fee">
-                <h3>PULSE Fee</h3>
-                <p class="pulse-rate">0.369% per transaction</p>
-                <p class="pulse-detail">Capped monthly • Under 1% MDR • 6× lower than industry standard</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="process" class="section process">
-        <div class="container">
-            <h2 class="section-title">How We Begin</h2>
-            <p class="section-subtitle">Simple. Sovereign. Respectful of your time.</p>
-            <div class="process-steps">
-                <div class="process-step">
-                    <span class="step-num">01</span>
-                    <h3>Conversation</h3>
-                    <p>15-minute WhatsApp call. We listen. You share your vision. No pitch.</p>
-                </div>
-                <div class="process-step">
-                    <span class="step-num">02</span>
-                    <h3>Assessment</h3>
-                    <p>Creator Complexity Assessment. We determine scope, timeline, investment.</p>
-                </div>
-                <div class="process-step">
-                    <span class="step-num">03</span>
-                    <h3>Agreement</h3>
-                    <p>Transparent quotation. All costs disclosed. You decide. No pressure.</p>
-                </div>
-                <div class="process-step">
-                    <span class="step-num">04</span>
-                    <h3>Deployment</h3>
-                    <p>We build. You create. Sovereign infrastructure, live and ready.</p>
-                </div>
-            </div>
-            <div class="process-cta">
-                <a href="https://wa.me/639662497803" target="_blank" class="btn btn-primary">Begin Your Conversation</a>
-                <p class="process-note">No commitment. Just clarity.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sovereignty Safeguards -->
-    <section class="section safeguards">
-        <div class="container">
-            <h2 class="section-title">Sovereignty Safeguards</h2>
-            <p class="section-subtitle">What ALL creators receive. No exceptions.</p>
-            <div class="safeguards-grid">
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>Data Ownership</strong>
-                        <p>You own 100% of your data. Forever.</p>
-                    </div>
-                </div>
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>Data Export</strong>
-                        <p>Export anytime. Standard format. Free.</p>
-                    </div>
-                </div>
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>Exit Freedom</strong>
-                        <p>Cancel with 30-day notice. No penalties.</p>
-                    </div>
-                </div>
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>No Lock-In</strong>
-                        <p>No long-term contracts. Your choice.</p>
-                    </div>
-                </div>
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>Price Transparency</strong>
-                        <p>All costs disclosed upfront. No hidden fees.</p>
-                    </div>
-                </div>
-                <div class="safeguard-item">
-                    <span class="check">✓</span>
-                    <div>
-                        <strong>90-Day Notice</strong>
-                        <p>Price increases require 90-day written notice.</p>
-                    </div>
+                <p><strong>Have more questions?</strong> Full architecture, pricing details, and implementation specifics are shared during your consultation. No pitch. Just clarity.</p>
+                <div class="faq-cta">
+                    <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%20have%20more%20questions%20about%20the%20Founding%20Creator%20Program.%20Can%20we%20talk%3F" target="_blank" class="btn btn-primary">Ask on WhatsApp</a>
+                    <a href="mailto:inquiry.pin8@gmail.com?subject=PIN8%20Inquiry%20-%20Founding%20Creator%20Program" class="btn btn-outline">Email Us</a>
                 </div>
             </div>
         </div>
@@ -492,16 +429,17 @@
         <div class="container">
             <h2 class="section-title">Begin the Conversation</h2>
             <p class="section-subtitle">The full picture is shared during your consultation. No pitch. No pressure. Just clarity.</p>
+            
             <div class="contact-container">
                 <div class="contact-methods">
-                    <a href="https://wa.me/639662497803" target="_blank" class="contact-card">
+                    <a href="https://wa.me/639662497803?text=Hi%20PIN8%2C%20I%27m%20interested%20in%20sovereign%20infrastructure%20for%20my%20creator%20business.%20Can%20we%20discuss%20the%20Founding%20Creator%20Program%3F" target="_blank" class="contact-card">
                         <span class="icon">💬</span>
                         <div>
                             <strong>WhatsApp</strong>
                             <p>+63 966 249 7803</p>
                         </div>
                     </a>
-                    <a href="mailto:inquiry.pin8@gmail.com" class="contact-card">
+                    <a href="mailto:inquiry.pin8@gmail.com?subject=PIN8%20Inquiry%20-%20Founding%20Creator%20Program" class="contact-card">
                         <span class="icon">✉️</span>
                         <div>
                             <strong>Email</strong>
@@ -509,10 +447,12 @@
                         </div>
                     </a>
                 </div>
+                
                 <form class="contact-form" action="https://formsubmit.co/inquiry.pin8@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="PIN8 Sovereign Consultation Request">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
+                    
                     <div class="form-group">
                         <label>Your Name</label>
                         <input type="text" name="name" required>
@@ -575,11 +515,21 @@
                     <p>Platforms are tools. You are the creator.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#vision">Vision</a>
-                    <a href="#faq">Insights</a>
-                    <a href="#investment">Investment</a>
+                    <a href="#education">What is PIN8</a>
+                    <a href="#problem">The Problem</a>
+                    <a href="#solution">Solution</a>
+                    <a href="#access">Founding Access</a>
+                    <a href="#sovereignty">Sovereignty</a>
+                    <a href="#faq">FAQs</a>
                     <a href="#contact">Contact</a>
                 </div>
+            </div>
+            <div class="footer-legal">
+                <a href="mailto:inquiry.pin8@gmail.com?subject=Privacy%20Policy%20Request">Privacy Policy</a>
+                <span class="legal-separator">•</span>
+                <a href="mailto:inquiry.pin8@gmail.com?subject=Terms%20of%20Service%20Request">Terms of Service</a>
+                <span class="legal-separator">•</span>
+                <span class="compliance-text">🛡️ Data Privacy Act Compliant (RA 10173)</span>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 PIN8 IT SOLUTIONS. All rights reserved.</p>
@@ -588,39 +538,6 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) { target.scrollIntoView({ behavior: 'smooth' }); }
-            });
-        });
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.99)';
-                navbar.style.boxShadow = '0 2px 20px rgba(212, 175, 55, 0.15)';
-            } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-                navbar.style.boxShadow = 'none';
-            }
-        });
-        // Form submission
-        const form = document.querySelector('.contact-form');
-        if (form) {
-            form.addEventListener('submit', function() {
-                const btn = this.querySelector('button[type="submit"]');
-                btn.textContent = 'Request Sent. We\'ll reply within 24 hours. 🙏';
-                btn.style.background = '#4CAF50';
-                btn.disabled = true;
-            });
-        }
-        console.log('✅ PIN8 PRIME SPINE SYSTEM Loaded');
-        console.log('🏛️ PARIAH INFINOVATION - PIN8 IT SOLUTIONS');
-        console.log('🔒 Creator Node Pricing v1.0 • Fair. Right. Just.');
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

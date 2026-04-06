@@ -1,3 +1,22 @@
+// ===== MOBILE MENU TOGGLE =====
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+    });
+}
+
+// ===== CLOSE MOBILE MENU ON LINK CLICK =====
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+    });
+});
+
 // ===== SMOOTH SCROLLING =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -53,18 +72,30 @@ faqItems.forEach(item => {
     });
 });
 
-// ===== FORM SUBMISSION =====
+// ===== FORM SUBMISSION WITH FEEDBACK =====
 const form = document.querySelector('.contact-form');
 if (form) {
     form.addEventListener('submit', function(e) {
         const btn = this.querySelector('button[type="submit"]');
-        btn.textContent = 'Request Sent. We\'ll reply within 24 hours. 🙏';
-        btn.style.background = '#4CAF50';
+        const originalText = btn.textContent;
+        
+        // Loading state
+        btn.textContent = 'Sending...';
         btn.disabled = true;
+        btn.style.background = '#999';
+        
+        // Success state (after FormSubmit processes)
+        setTimeout(() => {
+            btn.textContent = 'Request Sent. We\'ll reply within 24 hours. 🙏';
+            btn.style.background = '#4CAF50';
+        }, 2000);
     });
 }
 
 // ===== CONSOLE LOG =====
 console.log('✅ PIN8 PRIME SPINE SYSTEM Loaded');
 console.log('🏛️ PARIAH INFINOVATION - PIN8 IT SOLUTIONS');
-console.log('🔒 Creator Node Pricing v1.0 • Fair. Right. Just.');
+console.log('🛡️ BETA • FOUNDING CREATOR PROGRAM');
+console.log('🔒 Trade Secrets Protected • Sovereignty First');
+console.log('📞 WhatsApp: +63 966 249 7803');
+console.log('📧 Email: inquiry.pin8@gmail.com');
